@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Neon Hue Rotate</title>
+</head>
+<body> 
+    <div class="ball">
+        <div class="circle"></div>
+        <h2>Here</h2>
+     </div>
+    <div class="circles"></div>
+
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    align-content: center;
+    background: #111;
+}
+
+.circle
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #09fbd3;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+    filter: hue-rotate(40deg);
+    transform: rotate(0deg);
+    }
+    100%
+    {
+    filter: hue-rotate(360deg);
+    transform: rotate(0deg);
+
+    }
+}
+h2
+{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(224, 155, 50);
+    animation: animate2 3s linear infinite;
+}
+@keyframes animate2
+{
+    0%
+    {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+    }
+    100%
+    {
+    filter: hue-rotate(360deg);
+    transform: rotate(0deg);
+
+    }
+
+}
+    .circles
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: rgb(185, 164, 223);
+    animation: animate3 .5s linear infinite;
+}
+@keyframes animate3
+{
+    0%
+    {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+    }
+    100%
+    {
+    filter: hue-rotate(360deg);
+    transform: rotate(0deg);
+
+    }
+}
+    </style>
+    
+</body>
+</html>
